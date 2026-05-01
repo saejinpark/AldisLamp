@@ -2,28 +2,27 @@
 //  ContentView.swift
 //  AldisLamp
 //
-//  Created by 박세진 on 2/15/25.
+//  Created by 박세진 on 5/1/26.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+
+    @State private var viewModel = TransmitViewModel()
+
     var body: some View {
         TabView {
-            AldisPage()
+            TransmitView(viewModel: viewModel)
                 .tabItem {
-                    Label("Aldis", systemImage: "flashlight.on.fill")
+                    Label("MAIN", systemImage: "antenna.radiowaves.left.and.right")
                 }
-            MorsePage()
+            SettingsView(viewModel: viewModel)
                 .tabItem {
-                    Label("Morse", systemImage: "waveform")
-                }
-            SettingPage()
-                .tabItem {
-                    Label("Settings", systemImage: "gearshape")
+                    Label("SETTINGS", systemImage: "gearshape")
                 }
         }
-        .preferredColorScheme(.dark)
+        .tint(.orange)
     }
 }
 

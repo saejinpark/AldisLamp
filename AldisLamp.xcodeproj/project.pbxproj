@@ -6,17 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		EFFBA54E2D629ED200C55505 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EFFBA54D2D629ED200C55505 /* Localizable.xcstrings */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		EFFBA4F72D60A66600C55505 /* AldisLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AldisLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFFBA54D2D629ED200C55505 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		EFF4D4BD2FA486B600C3BDC4 /* AldisLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AldisLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EFFBA4F92D60A66600C55505 /* AldisLamp */ = {
+		EFF4D4BF2FA486B600C3BDC4 /* AldisLamp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AldisLamp;
 			sourceTree = "<group>";
@@ -24,7 +19,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EFFBA4F42D60A66600C55505 /* Frameworks */ = {
+		EFF4D4BA2FA486B600C3BDC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,19 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EFFBA4EE2D60A66600C55505 = {
+		EFF4D4B42FA486B600C3BDC4 = {
 			isa = PBXGroup;
 			children = (
-				EFFBA4F92D60A66600C55505 /* AldisLamp */,
-				EFFBA4F82D60A66600C55505 /* Products */,
-				EFFBA54D2D629ED200C55505 /* Localizable.xcstrings */,
+				EFF4D4BF2FA486B600C3BDC4 /* AldisLamp */,
+				EFF4D4BE2FA486B600C3BDC4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EFFBA4F82D60A66600C55505 /* Products */ = {
+		EFF4D4BE2FA486B600C3BDC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFFBA4F72D60A66600C55505 /* AldisLamp.app */,
+				EFF4D4BD2FA486B600C3BDC4 /* AldisLamp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,75 +48,74 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EFFBA4F62D60A66600C55505 /* AldisLamp */ = {
+		EFF4D4BC2FA486B600C3BDC4 /* AldisLamp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFFBA5052D60A66700C55505 /* Build configuration list for PBXNativeTarget "AldisLamp" */;
+			buildConfigurationList = EFF4D4C82FA486B700C3BDC4 /* Build configuration list for PBXNativeTarget "AldisLamp" */;
 			buildPhases = (
-				EFFBA4F32D60A66600C55505 /* Sources */,
-				EFFBA4F42D60A66600C55505 /* Frameworks */,
-				EFFBA4F52D60A66600C55505 /* Resources */,
+				EFF4D4B92FA486B600C3BDC4 /* Sources */,
+				EFF4D4BA2FA486B600C3BDC4 /* Frameworks */,
+				EFF4D4BB2FA486B600C3BDC4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				EFFBA4F92D60A66600C55505 /* AldisLamp */,
+				EFF4D4BF2FA486B600C3BDC4 /* AldisLamp */,
 			);
 			name = AldisLamp;
 			packageProductDependencies = (
 			);
 			productName = AldisLamp;
-			productReference = EFFBA4F72D60A66600C55505 /* AldisLamp.app */;
+			productReference = EFF4D4BD2FA486B600C3BDC4 /* AldisLamp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EFFBA4EF2D60A66600C55505 /* Project object */ = {
+		EFF4D4B52FA486B600C3BDC4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
-					EFFBA4F62D60A66600C55505 = {
-						CreatedOnToolsVersion = 16.2;
+					EFF4D4BC2FA486B600C3BDC4 = {
+						CreatedOnToolsVersion = 26.4.1;
 					};
 				};
 			};
-			buildConfigurationList = EFFBA4F22D60A66600C55505 /* Build configuration list for PBXProject "AldisLamp" */;
+			buildConfigurationList = EFF4D4B82FA486B600C3BDC4 /* Build configuration list for PBXProject "AldisLamp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				ko,
+				Base,
 			);
-			mainGroup = EFFBA4EE2D60A66600C55505;
+			mainGroup = EFF4D4B42FA486B600C3BDC4;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = EFFBA4F82D60A66600C55505 /* Products */;
+			productRefGroup = EFF4D4BE2FA486B600C3BDC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EFFBA4F62D60A66600C55505 /* AldisLamp */,
+				EFF4D4BC2FA486B600C3BDC4 /* AldisLamp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EFFBA4F52D60A66600C55505 /* Resources */ = {
+		EFF4D4BB2FA486B600C3BDC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFFBA54E2D629ED200C55505 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EFFBA4F32D60A66600C55505 /* Sources */ = {
+		EFF4D4B92FA486B600C3BDC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		EFFBA5032D60A66700C55505 /* Debug */ = {
+		EFF4D4C62FA486B700C3BDC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -167,6 +160,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G2NKCUA8N7;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -184,19 +178,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		EFFBA5042D60A66700C55505 /* Release */ = {
+		EFF4D4C72FA486B700C3BDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,6 +224,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G2NKCUA8N7;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -242,25 +236,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		EFFBA5062D60A66700C55505 /* Debug */ = {
+		EFF4D4C92FA486B700C3BDC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AldisLamp/Preview Content\"";
 				DEVELOPMENT_TEAM = G2NKCUA8N7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -273,23 +265,26 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.geppetto.AldisLamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		EFFBA5072D60A66700C55505 /* Release */ = {
+		EFF4D4CA2FA486B700C3BDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AldisLamp/Preview Content\"";
 				DEVELOPMENT_TEAM = G2NKCUA8N7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -302,10 +297,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.geppetto.AldisLamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,25 +313,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EFFBA4F22D60A66600C55505 /* Build configuration list for PBXProject "AldisLamp" */ = {
+		EFF4D4B82FA486B600C3BDC4 /* Build configuration list for PBXProject "AldisLamp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFFBA5032D60A66700C55505 /* Debug */,
-				EFFBA5042D60A66700C55505 /* Release */,
+				EFF4D4C62FA486B700C3BDC4 /* Debug */,
+				EFF4D4C72FA486B700C3BDC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFFBA5052D60A66700C55505 /* Build configuration list for PBXNativeTarget "AldisLamp" */ = {
+		EFF4D4C82FA486B700C3BDC4 /* Build configuration list for PBXNativeTarget "AldisLamp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFFBA5062D60A66700C55505 /* Debug */,
-				EFFBA5072D60A66700C55505 /* Release */,
+				EFF4D4C92FA486B700C3BDC4 /* Debug */,
+				EFF4D4CA2FA486B700C3BDC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EFFBA4EF2D60A66600C55505 /* Project object */;
+	rootObject = EFF4D4B52FA486B600C3BDC4 /* Project object */;
 }
