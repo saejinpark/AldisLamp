@@ -6,18 +6,16 @@
 //
 
 import AVFoundation
+import UIKit
 
 actor FlashService {
 
-    // MARK: - Properties
     private let device: AVCaptureDevice? = AVCaptureDevice.default(for: .video)
 
-    // MARK: - 단위 시간 (나노초)
     private func ditDuration(wpm: Int) -> UInt64 {
         UInt64(1_200_000_000 / wpm)
     }
 
-    // MARK: - 플래시 제어
     func torchOn(brightness: Float = 1.0) throws {
         guard let device, device.hasTorch, device.isTorchAvailable else { return }
         try device.lockForConfiguration()
@@ -32,8 +30,7 @@ actor FlashService {
         device.unlockForConfiguration()
     }
 
-    // MARK: - 송출
-    func transmit(symbols: [MorseSymbol], wpm: Int, brightness: Float) async throws {
+    func transmit(symbols: [MorseSymbol], wpm: Int, brightness: Float, soundFeedback: Bool, hapticFeedback: Bool) async throws {
         let dit = ditDuration(wpm: wpm)
         let dah = dit * 3
         let symbolGap = dit
@@ -44,28 +41,26 @@ actor FlashService {
             switch symbol {
             case .dit:
                 try torchOn(brightness: brightness)
+                if soundFeedback { await MainActor.run { SoundService.dit() } }
+                if hapticFeedback { await MainActor.run { UIImpactFeedbackGenerator(style: .light).impactOccurred() } }
                 try await Task.sleep(nanoseconds: dit)
                 try torchOff()
                 if index < symbols.count - 1 {
                     let next = symbols[index + 1]
-                    if case .dit = next {
-                        try await Task.sleep(nanoseconds: symbolGap)
-                    } else if case .dah = next {
-                        try await Task.sleep(nanoseconds: symbolGap)
-                    }
+                    if case .dit = next { try await Task.sleep(nanoseconds: symbolGap) }
+                    else if case .dah = next { try await Task.sleep(nanoseconds: symbolGap) }
                 }
 
             case .dah:
                 try torchOn(brightness: brightness)
+                if soundFeedback { await MainActor.run { SoundService.dah(wpm: wpm) } }
+                if hapticFeedback { await MainActor.run { UIImpactFeedbackGenerator(style: .medium).impactOccurred() } }
                 try await Task.sleep(nanoseconds: dah)
                 try torchOff()
                 if index < symbols.count - 1 {
                     let next = symbols[index + 1]
-                    if case .dit = next {
-                        try await Task.sleep(nanoseconds: symbolGap)
-                    } else if case .dah = next {
-                        try await Task.sleep(nanoseconds: symbolGap)
-                    }
+                    if case .dit = next { try await Task.sleep(nanoseconds: symbolGap) }
+                    else if case .dah = next { try await Task.sleep(nanoseconds: symbolGap) }
                 }
 
             case .charGap:
@@ -81,7 +76,6 @@ actor FlashService {
         try torchOff()
     }
 
-    // MARK: - 강제 종료
     func stop() throws {
         try torchOff()
     }

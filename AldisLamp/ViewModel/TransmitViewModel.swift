@@ -99,7 +99,13 @@ final class TransmitViewModel {
         transmitTask = Task { @MainActor in
             repeat {
                 do {
-                    try await flashService.transmit(symbols: symbols, wpm: wpm, brightness: brightness)
+                    try await flashService.transmit(
+                        symbols: symbols,
+                        wpm: wpm,
+                        brightness: brightness,
+                        soundFeedback: soundFeedback,
+                        hapticFeedback: hapticFeedback
+                    )
                 } catch is CancellationError {
                     break
                 } catch {
@@ -140,9 +146,6 @@ final class TransmitViewModel {
         if hapticFeedback {
             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
         }
-        if soundFeedback {
-            SoundService.beep()
-        }
         Task { try? await flashService.torchOn(brightness: brightness) }
     }
 
@@ -168,6 +171,14 @@ final class TransmitViewModel {
                 symbolQueue.removeLast()
             }
             enqueue([.wordGap])
+        }
+        
+        if soundFeedback {
+            switch symbol {
+            case .dit: SoundService.dit()
+            case .dah: SoundService.dah(wpm: wpm)
+            default: break
+            }
         }
     }
 
