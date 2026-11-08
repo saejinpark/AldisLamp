@@ -39,6 +39,9 @@ A ship's signal lamp in your hand. Type a message and the screen and torch blink
 ### 한국어
 모스부호,모스,신호등,손전등,플래시,해독,신호,SOS,항해,배,선박,무전,통신,캠핑,생존
 
+### 한국어 + 영어 복합 (한국 스토어용, 95자)
+모스부호,모스,신호등,손전등,해독,SOS,항해,캠핑,생존,통신,morse,morse code,signal lamp,flashlight,decoder,sailing,ship
+
 ### English
 morse,morse code,signal lamp,flashlight,torch,decoder,SOS,sailing,navy,ship,camping,survival
 
