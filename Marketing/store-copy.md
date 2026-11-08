@@ -50,9 +50,16 @@ morse,morse code,signal lamp,flashlight,torch,decoder,SOS,sailing,navy,ship,camp
 
 ## 부제 (30자 이하)
 
-- 한국어: 빛으로 보내고 읽는 모스 부호
-- English: Morse code by light
-- 日本語: 光で送る・読むモールス信号
+추천(첫 줄)과 대안. 부제의 단어는 검색에 잡히므로 키워드와 겹치지 않게 골랐습니다.
+
+- 한국어: 빛으로 보내고 읽는 모스 부호 / 모스 부호 신호등과 해독기 / 손전등으로 보내는 모스 부호
+- English: Morse code by light / Signal lamp and decoder / Flash, key and read Morse
+- 日本語: 光で送る・読むモールス信号 / モールス信号灯と解読 / ライトで送るモールス信号
+
+## 카테고리
+
+- 기본: 유틸리티. 손전등, 신호, 해독 도구라는 쓰임새가 그대로 맞고, 프로젝트의 LSApplicationCategoryType도 utilities입니다.
+- 보조: 교육을 권합니다. 모스 부호를 배우고 연습하는 쓰임새가 설명과 키워드에 들어 있어 심사와 검색 모두에 맞습니다. 생산성은 문서·일정·업무 도구가 모이는 곳이라 이 앱과 거리가 있고, 참고 자료(모스 부호표)나 내비게이션(항해 신호)도 가능하지만 교육보다 좁습니다.
 
 ## 설명 (4000자 이하)
 
